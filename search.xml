@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/blog/2022/07/26/hello-world/</url>
+    <content><![CDATA[<p>Selamat datang di blog <a href="https://bagussona.github.io/blog">bagussona</a>! Ini adalah postingan pertama gue. Disini gue akan posting apapun sesuai mood gue.. hahaha stay tune ya.</p>
+]]></content>
+      <categories>
+        <category>Greetings</category>
+      </categories>
+      <tags>
+        <tag>Greetings</tag>
+        <tag>First article</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Songs played on this web.</title>
     <url>/blog/2022/08/09/songs-played-on-this-web/</url>
     <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
@@ -43,36 +56,6 @@
       <tags>
         <tag>Copyright</tag>
         <tag>Permission</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Suzy is life, Suzy is love</title>
-    <url>/blog/2022/08/07/suzy-is-life-suzy-is-love/</url>
-    <content><![CDATA[<h4 id="Code-for-Bae-Suzy-♡"><a href="#Code-for-Bae-Suzy-♡" class="headerlink" title="Code for Bae Suzy ♡"></a>Code for Bae Suzy ♡</h4><figure class="highlight javascript"><figcaption><span>index.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> readLine = <span class="built_in">require</span>(<span class="string">&#x27;readline&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> rl = readLine.<span class="title function_">createInterface</span>(&#123;</span><br><span class="line">    <span class="attr">input</span>: process.<span class="property">stdin</span>,</span><br><span class="line">    <span class="attr">output</span>: process.<span class="property">stdout</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">suzyImpression</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    rl.<span class="title function_">question</span>(<span class="string">&#x27;Hey, Suzy, please type \&#x27;love\&#x27; for me:&#x27;</span>, <span class="function">(<span class="params">suzy</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (suzy == <span class="string">&#x27;love&#x27;</span>) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Marry me ♡&#x27;</span>);</span><br><span class="line">            <span class="keyword">return</span> rl.<span class="title function_">close</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;please, type \&#x27;love\&#x27;. :)&#x27;</span>);</span><br><span class="line">        <span class="title function_">suzyImpression</span>();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">suzyImpression</span>();</span><br></pre></td></tr></table></figure>
-<img src="/blog/2022/08/07/suzy-is-life-suzy-is-love/suzyku.jpg" class="" title="Bae Suzy">
-]]></content>
-      <categories>
-        <category>Crush</category>
-      </categories>
-      <tags>
-        <tag>Crush</tag>
-        <tag>Future</tag>
-        <tag>Bias</tag>
-        <tag>Beautiful</tag>
-        <tag>Love</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/blog/2022/07/26/hello-world/</url>
-    <content><![CDATA[<p>Selamat datang di blog <a href="https://bagussona.github.io/blog">bagussona</a>! Ini adalah postingan pertama gue. Disini gue akan posting apapun sesuai mood gue.. hahaha stay tune ya.</p>
-]]></content>
-      <categories>
-        <category>Greetings</category>
-      </categories>
-      <tags>
-        <tag>Greetings</tag>
-        <tag>First article</tag>
       </tags>
   </entry>
   <entry>
@@ -127,6 +110,23 @@
         <tag>Favorites</tag>
         <tag>Works</tag>
         <tag>General</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Suzy is life, Suzy is love</title>
+    <url>/blog/2022/08/07/suzy-is-life-suzy-is-love/</url>
+    <content><![CDATA[<h4 id="Code-for-Bae-Suzy-♡"><a href="#Code-for-Bae-Suzy-♡" class="headerlink" title="Code for Bae Suzy ♡"></a>Code for Bae Suzy ♡</h4><figure class="highlight javascript"><figcaption><span>index.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> readLine = <span class="built_in">require</span>(<span class="string">&#x27;readline&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> rl = readLine.<span class="title function_">createInterface</span>(&#123;</span><br><span class="line">    <span class="attr">input</span>: process.<span class="property">stdin</span>,</span><br><span class="line">    <span class="attr">output</span>: process.<span class="property">stdout</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">suzyImpression</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    rl.<span class="title function_">question</span>(<span class="string">&#x27;Hey, Suzy, please type \&#x27;love\&#x27; for me:&#x27;</span>, <span class="function">(<span class="params">suzy</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (suzy == <span class="string">&#x27;love&#x27;</span>) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Marry me ♡&#x27;</span>);</span><br><span class="line">            <span class="keyword">return</span> rl.<span class="title function_">close</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;please, type \&#x27;love\&#x27;. :)&#x27;</span>);</span><br><span class="line">        <span class="title function_">suzyImpression</span>();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">suzyImpression</span>();</span><br></pre></td></tr></table></figure>
+<img src="/blog/2022/08/07/suzy-is-life-suzy-is-love/suzyku.jpg" class="" title="Bae Suzy">
+]]></content>
+      <categories>
+        <category>Crush</category>
+      </categories>
+      <tags>
+        <tag>Crush</tag>
+        <tag>Future</tag>
+        <tag>Bias</tag>
+        <tag>Beautiful</tag>
+        <tag>Love</tag>
       </tags>
   </entry>
 </search>
