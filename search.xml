@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/blog/2022/07/26/hello-world/</url>
-    <content><![CDATA[<p>Selamat datang di blog <a href="https://bagussona.github.io/blog">bagussona</a>! Ini adalah postingan pertama gue. Disini gue akan posting apapun sesuai mood gue.. hahaha stay tune ya.</p>
-]]></content>
-      <categories>
-        <category>Greetings</category>
-      </categories>
-      <tags>
-        <tag>Greetings</tag>
-        <tag>First article</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Songs played on this web.</title>
     <url>/blog/2022/08/09/songs-played-on-this-web/</url>
     <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
@@ -73,6 +60,19 @@
         <tag>Bias</tag>
         <tag>Beautiful</tag>
         <tag>Love</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/blog/2022/07/26/hello-world/</url>
+    <content><![CDATA[<p>Selamat datang di blog <a href="https://bagussona.github.io/blog">bagussona</a>! Ini adalah postingan pertama gue. Disini gue akan posting apapun sesuai mood gue.. hahaha stay tune ya.</p>
+]]></content>
+      <categories>
+        <category>Greetings</category>
+      </categories>
+      <tags>
+        <tag>Greetings</tag>
+        <tag>First article</tag>
       </tags>
   </entry>
   <entry>
