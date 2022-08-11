@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Build Blog Using Hexo Framework, Node.js and Git - bagussona-blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Apa itu hexo?Hexo adalah Framework untuk Blogging yang cepat dan user-friendly. Postingan blog ak,"> 
+    <meta name="author" content="bagussona"> 
+    <link rel="alternative" href="atom.xml" title="bagussona-blog" type="application/atom+xml"> 
+    <link rel="icon" href="/blog/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Build Blog Using Hexo Framework, Node.js and Git - bagussona-blog"/>
+    <meta name="twitter:description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Apa itu hexo?Hexo adalah Framework untuk Blogging yang cepat dan user-friendly. Postingan blog ak,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="bagussona-blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Build Blog Using Hexo Framework, Node.js and Git - bagussona-blog"/>
+    <meta property="og:description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Apa itu hexo?Hexo adalah Framework untuk Blogging yang cepat dan user-friendly. Postingan blog ak,"/>
+    
+<link rel="stylesheet" href="/blog/css/diaspora.css">
+
+    <script>window.searchDbPath = "/blog/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">bagussona-blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://bagussona.github.io/blog"></a>
+    <div title="Play/ Pause" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Build Blog Using Hexo Framework, Node.js and Git</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="Get QR Code" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Build Blog Using Hexo Framework, Node.js and Git</h1>
+        <div class="stuff">
+            <span>August 11, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/Guide/" rel="tag">Guide</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/Installation/" rel="tag">Installation</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <img src="/blog/2022/08/11/setup-hexo/001.png" class="" title="Hexo">
+
+<h3 id="Apa-itu-hexo"><a href="#Apa-itu-hexo" class="headerlink" title="Apa itu hexo?"></a>Apa itu hexo?</h3><p>Hexo adalah Framework untuk Blogging yang cepat dan user-friendly. Postingan blog akan di tulis dalam file Markdown <em><strong>(atau bahasa markup lainnya)</strong></em>. Hexo menghasilkan file statis dalam hitungan detik, Hexo juga memiliki banyak tema yang akan mempercantik tampilan blog nya.</p>
+<h3 id="Apa-saja-yang-dibutuhkan"><a href="#Apa-saja-yang-dibutuhkan" class="headerlink" title="Apa saja yang dibutuhkan?"></a>Apa saja yang dibutuhkan?</h3><p>Menginstal Hexo cukup mudah, tidak banyak yang harus disiapkan. Cukup dengan 2 hal ini saja sudah bisa menginstal Hexo.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a> <em><strong>(Minimal Node.js versi 10.13, direkomendasikan versi 12.0 atau yang terbaru).</strong></em></li>
+<li><input checked="" disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> <em><strong>Sesuaikan dengan perangkat yang digunakan.</strong></em></li>
+</ul>
+<blockquote>
+<p>Jika di komputer sudah terinstal git ataupun node.js, bisa langsung ke <a href="#Instalasi-Hexo">Instalasi Hexo</a></p>
+</blockquote>
+<h3 id="Instalasi-Git"><a href="#Instalasi-Git" class="headerlink" title="Instalasi Git"></a>Instalasi Git</h3><ol>
+<li>Windows: Unduh dan Instal <a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a></li>
+<li>Mac: Instal menggunakan <a target="_blank" rel="noopener" href="https://brew.sh/">Brew</a>, <a target="_blank" rel="noopener" href="https://www.macports.org/">MacPorter</a>, <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/git-osx-installer/">Installer</a></li>
+<li>Linux: (Arch Linux) <code>sudo pacman -S git</code></li>
+<li>Linux: (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
+<li>Linux: (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code></li>
+</ol>
+<blockquote>
+<p>Untuk pengguna Mac: mungkin akan mengalami beberapa masalah saat proses kompilasi. Silahkan instal Xcode dari App Store terlebih dahulu. Setelah Xcode terinstal, buka Xcode dan buka <code>Preferences</code> → <code>Download</code> → <code>Command Line Tools</code> → <code>Install</code> untuk menginstal <em><strong>command-line-tools</strong></em>.</p>
+</blockquote>
+<h3 id="Instalasi-Node-js"><a href="#Instalasi-Node-js" class="headerlink" title="Instalasi Node.js"></a>Instalasi Node.js</h3><p>Node.js menyediakan installer resmi untuk berbagai platform. Namun ada juga metode alternatif bagi yang tidak ingin menggunakan installer resmi dari Node.js</p>
+<ol>
+<li>Windows: Instal bisa menggunakan <a target="_blank" rel="noopener" href="https://github.com/jasongin/nvs/">Nvs</a> <em><strong>(rekomendasi)</strong></em> atau <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm">Nvm</a></li>
+<li>Mac: Instal menggunakan <a target="_blank" rel="noopener" href="https://brew.sh/">Brew</a>, <a target="_blank" rel="noopener" href="https://www.macports.org/">MacPorter</a></li>
+<li>Linux (DEB&#x2F;RPM-based): Instal menggunakan <a target="_blank" rel="noopener" href="https://github.com/nodesource/distributions">NodeSource</a></li>
+<li>Others: Bisa menggunakan paket manajer masing-masing. Lihat <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/package-manager/">panduan</a> yang disediakan oleh <a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></li>
+</ol>
+<p>nvs juga direkomendasikan untuk Mac dan Linux, untuk menghindari masalah perizinan.</p>
+<blockquote>
+<h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p>Jika menginstal Node.js menggunakan installer resmi, pastikan <code>ADD to PATH</code> terceklis. <em><strong>(Biasanya terceklis secara default)</strong></em></p>
+</blockquote>
+<blockquote>
+<h4 id="Mac-x2F-Linux"><a href="#Mac-x2F-Linux" class="headerlink" title="Mac&#x2F; Linux"></a>Mac&#x2F; Linux</h4><p>Jika terjadi kesalahan izin <code>EACCES</code> saat menginstal Hexo, ikuti <a target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally/">solusi</a> yang disediakan oleh npmjs; Tidak disarankan memberikan hak akses root&#x2F;Sudo.</p>
+</blockquote>
+<blockquote>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><p>Jika menginstal Node.js menggunakan Snap, disarankan untuk menjalankan <code>npm install</code> secara manual di folder tersebut ketika <a target="_blank" rel="noopener" href="https://hexo.io/docs/commands#init">menginisialisasi</a> blog.</p>
+</blockquote>
+<h3 id="Instalasi-Hexo"><a href="#Instalasi-Hexo" class="headerlink" title="Instalasi Hexo"></a>Instalasi Hexo</h3><p>Ketika ke 2 hal yang dibutuhkan sudah terinstal. Hexo sudah bisa diinstal menggunakan <code>npm</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="Instalasi-dan-Penggunaan-lanjutan"><a href="#Instalasi-dan-Penggunaan-lanjutan" class="headerlink" title="Instalasi dan Penggunaan lanjutan"></a>Instalasi dan Penggunaan lanjutan</h3><p>Pengguna Intermediat biasanya lebih memilih menginstal dan menggunakan <code>hexo</code> sebagai paket.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo</span><br></pre></td></tr></table></figure>
+
+<p>Setelah terinstal, Hexo dapat dijalankan dengan 2 cara:</p>
+<ol>
+<li><code>npx hexo &lt;command&gt;</code></li>
+<li>Pengguna Linux dapat menyiapkan jalur relatif folder <code>node_modules/</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;PATH=&quot;$PATH:./node_modules/.bin&quot;&#x27;</span> &gt;&gt; ~/.profile</span><br></pre></td></tr></table></figure>
+
+<p>kemudian jalankan Hexo menggunakan <code>hexo &lt;command&gt;</code></p>
+<h3 id="Versi-minimal-Node-js-yang-dibutuhkan"><a href="#Versi-minimal-Node-js-yang-dibutuhkan" class="headerlink" title="Versi minimal Node.js yang dibutuhkan"></a>Versi minimal Node.js yang dibutuhkan</h3><p>Disarankan untuk selalu menginstal versi terbaru Hexo dan versi Node.js yang sesuai.</p>
+<table>
+<thead>
+<tr>
+<th>Versi Hexo</th>
+<th>Versi Minimal Node.js</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6.0+</td>
+<td>12.13.0</td>
+</tr>
+<tr>
+<td>5.0+</td>
+<td>10.13.0</td>
+</tr>
+<tr>
+<td>4.1 - 4.2</td>
+<td>8.10</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>8.6</td>
+</tr>
+<tr>
+<td>3.3 - 3.9</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>3.2 - 3.3</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>3.0 - 3.1</td>
+<td>0.10 or iojs</td>
+</tr>
+<tr>
+<td>0.0.1 - 2.8</td>
+<td>0.10</td>
+</tr>
+</tbody></table>
+<p>Terima kasih sudah membaca artikel <a href="#Apa-Itu-hexo?">Build Blog Using Hexo Framework, Node.js and Git</a></p>
+<p>Referensi: <a target="_blank" rel="noopener" href="https://hexo.io/docs/">https://hexo.io/docs/</a></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="/blog//music/005-Haico-Bahagia-Bersamamu.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="/blog//music/006-Citra-Scholastika-Everybody-Knew.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="false"
+        data-ci="c7bc3901b06c9256f6a1"
+        data-cs="1955536a83ddc0b54617f479c1a4cf8c1fc7a45d"
+        data-r="blog"
+        data-o="bagussona"
+        data-a="bagussona"
+        data-d="false"
+    >Load Comments</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/blog/js/plugin.js"></script>
+<script src="/blog/js/typed.js"></script>
+<script src="/blog/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/blog/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/blog/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/blog/photoswipe/photoswipe.min.js"></script>
+<script src="/blog/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
