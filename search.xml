@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Config Blog With Hexo Theme Diaspora with Gitalk Activation</title>
+    <url>/blog/2022/08/16/config-hexo-theme/</url>
+    <content><![CDATA[<img src="/blog/2022/08/16/config-hexo-theme/001.png" class="" title="Hexo">
+
+<h2 id="Pilih-Tema"><a href="#Pilih-Tema" class="headerlink" title="Pilih Tema"></a>Pilih Tema</h2><p>Disini saya memilih Diaspora sebagai tema untuk blog saya.</p>
+<p>Pilih tema yang kalian suka <a href="https://hexo.io/themes/">disini</a>.<br>Cari url github untuk tema nya di website. Untuk Diaspora, ini url nya. <a href="https://github.com/Fechin/hexo-theme-diaspora">@Fechin - Diaspora</a><br>Ikuti instruksi yang telah di tulis di <code>Readme.md</code></p>
+<h2 id="Instal-Tema"><a href="#Instal-Tema" class="headerlink" title="Instal Tema"></a>Instal Tema</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</span><br></pre></td></tr></table></figure>
+
+<h2 id="Terapkan-Tema"><a href="#Terapkan-Tema" class="headerlink" title="Terapkan Tema"></a>Terapkan Tema</h2><p>Ubah file konfigurasi hexo, <code>_config.yml</code>. Ubah nilai theme menjadi Diaspora.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">theme: diaspora</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="Perbarui-Tema"><a href="#Perbarui-Tema" class="headerlink" title="Perbarui Tema"></a>Perbarui Tema</h2><blockquote>
+<p>Catatan: Jangan lupa untuk buat file <code>_config.yml</code> cadangan, saat memperbarui tema.</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/diaspora</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<h2 id="Template-Artikel-baru"><a href="#Template-Artikel-baru" class="headerlink" title="Template Artikel baru"></a>Template Artikel baru</h2><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: My awesome title</span><br><span class="line">date: 2022-08-16 00:00:00</span><br><span class="line">categories: </span><br><span class="line"><span class="bullet">    -</span> category-1</span><br><span class="line"><span class="bullet">    -</span> category-2</span><br><span class="line">tags: </span><br><span class="line"><span class="bullet">    -</span> tag-1</span><br><span class="line"><span class="bullet">    -</span> tag-2</span><br><span class="line">mp3: http://domain.com/awesome.mp3</span><br><span class="line"><span class="section">cover: http://domain.com/awesome.jpg</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Membuat-Kategori"><a href="#Membuat-Kategori" class="headerlink" title="Membuat Kategori"></a>Membuat Kategori</h2><ol>
+<li><p>Buat halaman baru dan diberi nama <code>categories</code>. Ikuti perintah berikut:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Edit halaman yang baru dibuat dan atur jenis halaman ke <code>categories</code>.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2022-08-16 00:00:00</span><br><span class="line"><span class="section">type: &quot;categories&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>Tema akan secara otomatis menampilkan semua <code>categories</code> untuk halaman ini.</p>
+<h2 id="Membuat-Tag"><a href="#Membuat-Tag" class="headerlink" title="Membuat Tag"></a>Membuat Tag</h2><ol>
+<li><p>Buat halaman baru dan diberi nama <code>tags</code>. Ikuti perintah berikut:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Edit halaman yang baru dibuat dan atur jenis halaman ke <code>tags</code>.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2022-08-16 00:00:00</span><br><span class="line"><span class="section">type: &quot;tags&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>Tema akan secara otomatis menampilkan semua <code>tags</code> untuk halaman ini.</p>
+<h2 id="Membuat-Pencarian"><a href="#Membuat-Pencarian" class="headerlink" title="Membuat Pencarian"></a>Membuat Pencarian</h2><ol>
+<li><p>Perlu menginstal plugin pencarian untuk hexo.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>tambahkan script berikut di <code>_config.yml</code>.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Buat halaman baru dan diberi nama <code>search</code>. Ikuti perintah berikut:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page search</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Edit halaman yang baru dibuat dan atur jenis halaman ke <code>search</code>.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">title: search</span><br><span class="line">date: 2022-08-16 00:00:00</span><br><span class="line"><span class="section">type: &quot;search&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Aktifkan menu pencarian lokal di <code>_config.yml</code> yang ada di folder tema.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="section">#本地搜索,请将索引文件放在网站根目录</span></span><br><span class="line">local<span class="emphasis">_search:</span></span><br><span class="line"><span class="emphasis">    #是否启用</span></span><br><span class="line"><span class="emphasis">    enable: true</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>Tema akan secara otomatis menampilkan fungsi pencarian untuk halaman ini.</p>
+<h2 id="Konfigurasi-Gitalk"><a href="#Konfigurasi-Gitalk" class="headerlink" title="Konfigurasi Gitalk"></a>Konfigurasi Gitalk</h2><p>Daftarkan aplikasi github kalian <a href="https://github.com/settings/applications/new">disini</a>.</p>
+<p>Setelah berhasil mendaftarkan aplikasi github, kalian akan mendapatkan <code>clientID</code> dan <code>clientSecret</code>. Silahkan copy dan isikan ke <code>_config.yml</code> bawaan tema.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">gitalk:</span><br><span class="line"><span class="code">    enable: true</span></span><br><span class="line"><span class="code">    autoExpand: false</span></span><br><span class="line"><span class="code">    clientID: &#x27;&lt;yourClientId&gt;&#x27;</span></span><br><span class="line"><span class="code">    clientSecret: &#x27;&lt;yourClientSecret&gt;&#x27;</span></span><br><span class="line"><span class="code">    repo: &#x27;&lt;yourRepo&gt;&#x27;</span></span><br><span class="line"><span class="code">    owner: &#x27;&lt;yourGithubUsername&gt;&#x27;</span></span><br><span class="line"><span class="code">    admin: [&lt;yourGithubUsername&gt;]</span></span><br><span class="line"><span class="code">    id: location.pathname</span></span><br><span class="line"><span class="code">    distractionFreeMode: false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="config-yml-bawaan-tema"><a href="#config-yml-bawaan-tema" class="headerlink" title="_config.yml bawaan tema."></a><code>_config.yml</code> bawaan tema.</h4><p>Ini adalah file konfigurasi bawaan dari tema. Anda bisa menyesuaikan konfigurasi tema disini.</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="section"># 头部菜单，title: link</span></span><br><span class="line">menu:</span><br><span class="line">  首页: /</span><br><span class="line">  分类: /categories</span><br><span class="line">  标签: /tags</span><br><span class="line">  归档: /archives  </span><br><span class="line">  关于: /about</span><br><span class="line"></span><br><span class="line"><span class="section"># 是否显示目录</span></span><br><span class="line">TOC: false</span><br><span class="line"></span><br><span class="line"><span class="section"># 是否自动播放音乐</span></span><br><span class="line">autoplay: false</span><br><span class="line"></span><br><span class="line"><span class="section"># 默认音乐（随机播放）</span></span><br><span class="line">mp3: </span><br><span class="line"><span class="bullet">    -</span> http://link.hhtjim.com/163/425570952.mp3</span><br><span class="line"><span class="bullet">    -</span> http://link.hhtjim.com/163/425570952.mp3</span><br><span class="line"></span><br><span class="line"><span class="section"># 首页封面图, 为空时取文章的cover作为封面(注意跨域问题,建议使用同源图片)</span></span><br><span class="line">welcome<span class="emphasis">_cover: /img/welcome-cover.jpg</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis"># 默认文章封面图（随机调用,支持外链）</span></span><br><span class="line"><span class="emphasis">cover: </span></span><br><span class="line"><span class="emphasis">  - /img/cover.jpg</span></span><br><span class="line"><span class="emphasis">  - /img/welcome-cover.jpg</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis"># 是否显示Twitter分享卡片图像(图像尺寸要求：1200*600，creatorid不需要带@符号。注意：链接必须是完整url，否则Twitter将无法读取图片信息）</span></span><br><span class="line"><span class="emphasis">twitterpic:</span></span><br><span class="line"><span class="emphasis">  enable: false</span></span><br><span class="line"><span class="emphasis">  src: https://bangdream.moe/img/ident.png</span></span><br><span class="line"><span class="emphasis">  creatorid: yourtwitteridhere</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis"># 是否关闭默认滚动条</span></span><br><span class="line"><span class="emphasis">scrollbar: true</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis"># 本地搜索,请将索引文件放在网站根目录,或修改主题js文件的path值</span></span><br><span class="line"><span class="emphasis">local_</span>search:</span><br><span class="line"><span class="code">    # 是否启用</span></span><br><span class="line"><span class="code">    enable: false</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="section"># 是否显示 一言(hitokoto)</span></span><br><span class="line">hitokoto: true</span><br><span class="line"></span><br><span class="line"><span class="section"># 链接(可选:facebook,twitter,github,wechat,email)</span></span><br><span class="line">links:</span><br><span class="line"><span class="code">    facebook: /</span></span><br><span class="line"><span class="code">    twitter: /</span></span><br><span class="line"><span class="code">    github: /</span></span><br><span class="line"><span class="code">    wechat: /img/logo.png</span></span><br><span class="line"><span class="code">    email: mailto:xxxx@gmail.com</span></span><br><span class="line"><span class="code">  </span></span><br><span class="line"><span class="code"># 备案</span></span><br><span class="line"><span class="code">beian: </span></span><br><span class="line"><span class="code">    # 是否显示备案信息</span></span><br><span class="line"><span class="code">    enable: true</span></span><br><span class="line"><span class="code">    # 是否在主页面最底下显示备案信息(虽然丑，但是完全满足规定要求)</span></span><br><span class="line"><span class="code">    enableFooter: false</span></span><br><span class="line"><span class="code">    # 备案号</span></span><br><span class="line"><span class="code">    beianInfo: 冀ICP备xxxxxxx号</span></span><br><span class="line"><span class="code">    # 链接地址</span></span><br><span class="line"><span class="code">    link: http://www.beian.miit.gov.cn</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="section"># 是否使用mathjax</span></span><br><span class="line">mathjax: false</span><br><span class="line"></span><br><span class="line"><span class="section"># Gitalk 评论插件（https://github.com/gitalk/gitalk）</span></span><br><span class="line">gitalk:</span><br><span class="line"><span class="code">    # 是否启用评论功能</span></span><br><span class="line"><span class="code">    enable: false</span></span><br><span class="line"><span class="code">    # 是否自动展开评论框</span></span><br><span class="line"><span class="code">    autoExpand: false</span></span><br><span class="line"><span class="code">    # 应用编号</span></span><br><span class="line"><span class="code">    clientID: &#x27;&#x27;</span></span><br><span class="line"><span class="code">    # 应用秘钥</span></span><br><span class="line"><span class="code">    clientSecret: &#x27;&#x27;</span></span><br><span class="line"><span class="code">    # issue仓库名</span></span><br><span class="line"><span class="code">    repo: &#x27;&#x27;</span></span><br><span class="line"><span class="code">    # Github名</span></span><br><span class="line"><span class="code">    owner: &#x27;&#x27;</span></span><br><span class="line"><span class="code">    # Github名</span></span><br><span class="line"><span class="code">    admin: [&#x27;&#x27;]</span></span><br><span class="line"><span class="code">    # Ensure uniqueness and length less than 50</span></span><br><span class="line"><span class="code">    id: location.pathname</span></span><br><span class="line"><span class="code">    # Facebook-like distraction free mode</span></span><br><span class="line"><span class="code">    distractionFreeMode: false</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="section"># 网站关键字</span></span><br><span class="line">keywords: Fechin</span><br><span class="line"></span><br><span class="line"><span class="section"># 要使用google<span class="emphasis">_analytics进行统计的话，这里需要配置ID</span></span></span><br><span class="line"><span class="emphasis"><span class="section">google_</span>analytics: </span></span><br><span class="line"></span><br><span class="line"><span class="section"># 网站ico</span></span><br><span class="line">favicon: /img/favicon.png</span><br><span class="line"></span><br><span class="line"><span class="section"># rss文件</span></span><br><span class="line">rss: atom.xml</span><br><span class="line"></span><br><span class="line"><span class="section"># 版权信息，要使用版权信息可以在这配置并设定许可方式，可以从 https://creativecommons.org/about/cclicenses/ 查询</span></span><br><span class="line">copyright:</span><br><span class="line"><span class="code">    enable: false</span></span><br><span class="line"><span class="code">    license: &quot;CC BY-NC-ND&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Terima kasih sudah membaca artikel <a href="#instal-tema">Config Blog With Hexo Theme Diaspora with Gitalk Activation</a></p>
+<p>Referensi: <a href="https://github.com/Fechin/hexo-theme-diaspora">@Fechin - Docs</a></p>
+]]></content>
+      <categories>
+        <category>Technology</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Guide</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/blog/2022/07/26/hello-world/</url>
     <content><![CDATA[<p>Selamat datang di blog <a href="https://bagussona.github.io/blog">bagussona</a>! Ini adalah postingan pertama gue. Disini gue akan posting apapun sesuai mood gue.. hahaha stay tune ya.</p>
@@ -11,6 +81,51 @@
       <tags>
         <tag>Greetings</tag>
         <tag>First article</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Songs played on this web.</title>
+    <url>/blog/2022/08/09/songs-played-on-this-web/</url>
+    <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
+<p>Halloo, untuk kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>, maaf ya aku pinjam lagunya untuk dimainkan di blog ini sebagai backsong.</p>
+<p>Tapi disini aku cantumin semua info tentang kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>.</p>
+<h2 id="Songs-Played-on-This-Web"><a href="#Songs-Played-on-This-Web" class="headerlink" title="Songs Played on This Web"></a>Songs Played on This Web</h2><ol>
+<li>Citra Scholastika - Everybody Knew 1st Single Citra Scholastika</li>
+</ol>
+<blockquote>
+<p>Informasi</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Judul : Everybody Knew</li>
+<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
+<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a></li>
+<li><input checked="" disabled="" type="checkbox"> Album : Pasti Bisa</li>
+<li><input checked="" disabled="" type="checkbox"> Lisensi : (atas nama Hits Records); UMPG Publishing, ASCAP, PT Massive Music Entertainment, Polaris Hub AB, LatinAutorPerf, dan 10 Lembaga Manajemen Kolektif</li>
+<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=GFLb0Gw9MDs">Official Music Video - Youtube</a></li>
+</ul>
+</blockquote>
+<h4 id="Lirik"><a href="#Lirik" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada penyesalan dalam hidupku</span><br><span class="line">Dan apa yang kurasakan saat ini</span><br><span class="line">Seperti dahulu ku tak mengenalmu</span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada lagi hasrat dalam hidupku</span><br><span class="line">Kepada dirimu yang dulu tercinta</span><br><span class="line">Tak ada lagi kenangan, takkan lagi harapan</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Ketika kulihat kau bersama dia</span></span><br><span class="line"><span class="string">Tak ada penyesalan dalam hidupku</span></span><br><span class="line"><span class="string">Dan apa yang kurasakan saat ini</span></span><br><span class="line"><span class="string">Seperti dahulu ku tak mengenalmu</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar (Everybody knew you<span class="string">&#x27;re a liar)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player (Everybody knew you<span class="string">&#x27;re a player)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re never</span><br><span class="line">Serious risk your love again</span><br><span class="line">And I tell you once again</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar (Everybody knew you&#x27;</span>re a liar)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a player (Everybody knew you&#x27;</span>re a player)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Oh baby</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Haico - Bahagia Bersamamu | OFFICIAL MUSIC VIDEO</li>
+</ol>
+<blockquote>
+<p>Informasi</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Judul : Bahagia Bersamamu</li>
+<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
+<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a></li>
+<li><input checked="" disabled="" type="checkbox"> Album : Bahagia Bersamamu</li>
+<li><input checked="" disabled="" type="checkbox"> Lisensi : Believe Music (atas nama Bentuk Music); P.T. Premi Musik Era (Premier), dan 5 Lembaga Manajemen Kolektif</li>
+<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=xUm6uMf-9xI">Official Music Video - Youtube</a></li>
+</ul>
+</blockquote>
+<h4 id="Lirik-1"><a href="#Lirik-1" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line">Bahagia ku bersamamu</span><br><span class="line">Senang bila dekat denganmu</span><br><span class="line">Kamu mahluk yang aku tuju</span><br><span class="line">Yang lainnya aku tidak mau</span><br><span class="line"> </span><br><span class="line">Genggam erat tangan ku sayang</span><br><span class="line">Dan jangan pernah kau lepaskan</span><br><span class="line">Karena aku butuh bimbingan</span><br><span class="line">Cinta ku jangan kau lewatkan</span><br><span class="line"> </span><br><span class="line">Bahagia aku bila bersamamu</span><br><span class="line">Tenang hatiku dalam pelukanmu</span><br><span class="line">Tetap denganku hingga kau menua</span><br><span class="line">Hingga memutih rambutmu</span><br><span class="line"> </span><br><span class="line">Senang hatiku hidup bersamamu</span><br><span class="line">Belahan jiwa jagalah diriku</span><br><span class="line">karena denganmu damai lah hatiku</span><br><span class="line">menualah bersamaku</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>General</category>
+      </categories>
+      <tags>
+        <tag>Copyright</tag>
+        <tag>Permission</tag>
       </tags>
   </entry>
   <entry>
@@ -59,6 +174,10 @@
 <h3 id="→-themes"><a href="#→-themes" class="headerlink" title="→ themes"></a>→ themes</h3><p>Folder <code>themes</code>, tema bawaan dari hexo adalah <a href="https://hexojs.github.io/hexo-theme-landscape/">landscape</a>. Tema bisa diganti menggunakan <a href="https://hexo.io/themes/">tema-tema</a> yang lain untuk mempercantik tampilan blog kalian.</p>
 <img src="/blog/2022/08/14/run-hexo/002-min.png" class="" title="landscape-themes">
 
+<h2 id="Start-Using-Hexo"><a href="#Start-Using-Hexo" class="headerlink" title="Start Using Hexo"></a>Start Using Hexo</h2><p>Untuk mulai menjalankan hexo, cukup ketikkan perintah berikut:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>Hexo akan berjalan di <code>http://localhost:4000/</code>, copy lalu buka di browser.</p>
 <p>Terima kasih sudah membaca artikel <a href="#menjalankan-hexo">Start Using Hexo</a></p>
 <p>Referensi: <a href="https://hexo.io/docs/setup">https://hexo.io/docs/setup</a></p>
 ]]></content>
@@ -176,51 +295,6 @@
         <tag>Hexo</tag>
         <tag>Guide</tag>
         <tag>Installation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Songs played on this web.</title>
-    <url>/blog/2022/08/09/songs-played-on-this-web/</url>
-    <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
-<p>Halloo, untuk kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>, maaf ya aku pinjam lagunya untuk dimainkan di blog ini sebagai backsong.</p>
-<p>Tapi disini aku cantumin semua info tentang kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>.</p>
-<h2 id="Songs-Played-on-This-Web"><a href="#Songs-Played-on-This-Web" class="headerlink" title="Songs Played on This Web"></a>Songs Played on This Web</h2><ol>
-<li>Citra Scholastika - Everybody Knew 1st Single Citra Scholastika</li>
-</ol>
-<blockquote>
-<p>Informasi</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Judul : Everybody Knew</li>
-<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
-<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a></li>
-<li><input checked="" disabled="" type="checkbox"> Album : Pasti Bisa</li>
-<li><input checked="" disabled="" type="checkbox"> Lisensi : (atas nama Hits Records); UMPG Publishing, ASCAP, PT Massive Music Entertainment, Polaris Hub AB, LatinAutorPerf, dan 10 Lembaga Manajemen Kolektif</li>
-<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=GFLb0Gw9MDs">Official Music Video - Youtube</a></li>
-</ul>
-</blockquote>
-<h4 id="Lirik"><a href="#Lirik" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada penyesalan dalam hidupku</span><br><span class="line">Dan apa yang kurasakan saat ini</span><br><span class="line">Seperti dahulu ku tak mengenalmu</span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada lagi hasrat dalam hidupku</span><br><span class="line">Kepada dirimu yang dulu tercinta</span><br><span class="line">Tak ada lagi kenangan, takkan lagi harapan</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Ketika kulihat kau bersama dia</span></span><br><span class="line"><span class="string">Tak ada penyesalan dalam hidupku</span></span><br><span class="line"><span class="string">Dan apa yang kurasakan saat ini</span></span><br><span class="line"><span class="string">Seperti dahulu ku tak mengenalmu</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar (Everybody knew you<span class="string">&#x27;re a liar)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player (Everybody knew you<span class="string">&#x27;re a player)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re never</span><br><span class="line">Serious risk your love again</span><br><span class="line">And I tell you once again</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar (Everybody knew you&#x27;</span>re a liar)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a player (Everybody knew you&#x27;</span>re a player)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Oh baby</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>Haico - Bahagia Bersamamu | OFFICIAL MUSIC VIDEO</li>
-</ol>
-<blockquote>
-<p>Informasi</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Judul : Bahagia Bersamamu</li>
-<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
-<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a></li>
-<li><input checked="" disabled="" type="checkbox"> Album : Bahagia Bersamamu</li>
-<li><input checked="" disabled="" type="checkbox"> Lisensi : Believe Music (atas nama Bentuk Music); P.T. Premi Musik Era (Premier), dan 5 Lembaga Manajemen Kolektif</li>
-<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=xUm6uMf-9xI">Official Music Video - Youtube</a></li>
-</ul>
-</blockquote>
-<h4 id="Lirik-1"><a href="#Lirik-1" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line">Bahagia ku bersamamu</span><br><span class="line">Senang bila dekat denganmu</span><br><span class="line">Kamu mahluk yang aku tuju</span><br><span class="line">Yang lainnya aku tidak mau</span><br><span class="line"> </span><br><span class="line">Genggam erat tangan ku sayang</span><br><span class="line">Dan jangan pernah kau lepaskan</span><br><span class="line">Karena aku butuh bimbingan</span><br><span class="line">Cinta ku jangan kau lewatkan</span><br><span class="line"> </span><br><span class="line">Bahagia aku bila bersamamu</span><br><span class="line">Tenang hatiku dalam pelukanmu</span><br><span class="line">Tetap denganku hingga kau menua</span><br><span class="line">Hingga memutih rambutmu</span><br><span class="line"> </span><br><span class="line">Senang hatiku hidup bersamamu</span><br><span class="line">Belahan jiwa jagalah diriku</span><br><span class="line">karena denganmu damai lah hatiku</span><br><span class="line">menualah bersamaku</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>General</category>
-      </categories>
-      <tags>
-        <tag>Copyright</tag>
-        <tag>Permission</tag>
       </tags>
   </entry>
   <entry>
