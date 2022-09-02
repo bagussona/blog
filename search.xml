@@ -84,48 +84,69 @@
       </tags>
   </entry>
   <entry>
-    <title>Songs played on this web.</title>
-    <url>/blog/2022/08/09/songs-played-on-this-web/</url>
-    <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
-<p>Halloo, untuk kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>, maaf ya aku pinjam lagunya untuk dimainkan di blog ini sebagai backsong.</p>
-<p>Tapi disini aku cantumin semua info tentang kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>.</p>
-<h2 id="Songs-Played-on-This-Web"><a href="#Songs-Played-on-This-Web" class="headerlink" title="Songs Played on This Web"></a>Songs Played on This Web</h2><ol>
-<li>Citra Scholastika - Everybody Knew 1st Single Citra Scholastika</li>
-</ol>
-<blockquote>
-<p>Informasi</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Judul : Everybody Knew</li>
-<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
-<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a></li>
-<li><input checked="" disabled="" type="checkbox"> Album : Pasti Bisa</li>
-<li><input checked="" disabled="" type="checkbox"> Lisensi : (atas nama Hits Records); UMPG Publishing, ASCAP, PT Massive Music Entertainment, Polaris Hub AB, LatinAutorPerf, dan 10 Lembaga Manajemen Kolektif</li>
-<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=GFLb0Gw9MDs">Official Music Video - Youtube</a></li>
-</ul>
-</blockquote>
-<h4 id="Lirik"><a href="#Lirik" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada penyesalan dalam hidupku</span><br><span class="line">Dan apa yang kurasakan saat ini</span><br><span class="line">Seperti dahulu ku tak mengenalmu</span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada lagi hasrat dalam hidupku</span><br><span class="line">Kepada dirimu yang dulu tercinta</span><br><span class="line">Tak ada lagi kenangan, takkan lagi harapan</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Ketika kulihat kau bersama dia</span></span><br><span class="line"><span class="string">Tak ada penyesalan dalam hidupku</span></span><br><span class="line"><span class="string">Dan apa yang kurasakan saat ini</span></span><br><span class="line"><span class="string">Seperti dahulu ku tak mengenalmu</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar (Everybody knew you<span class="string">&#x27;re a liar)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player (Everybody knew you<span class="string">&#x27;re a player)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re never</span><br><span class="line">Serious risk your love again</span><br><span class="line">And I tell you once again</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar (Everybody knew you&#x27;</span>re a liar)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a player (Everybody knew you&#x27;</span>re a player)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Oh baby</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+    <title>Deploy blog to gh-pages</title>
+    <url>/blog/2022/08/30/gh-pages-deployment/</url>
+    <content><![CDATA[<img src="/blog/2022/08/30/gh-pages-deployment/001.png" class="" title="Hexo">
 
-<ol start="2">
-<li>Haico - Bahagia Bersamamu | OFFICIAL MUSIC VIDEO</li>
+<p>Setelah mengikuti semua seri tentang hexo di blog ini. Mungkin kalian sekarang ingin membuat blog hexo kalian di publish online? Tidak hanya sekadar konfigurasi di lokal komputer kita saja? Agar semua orang dapat membaca tulisan &#x2F; artikel kita. Iya kan?</p>
+<p>Ada banyak cara untuk membuat blog hexo kita dapat dikonsumsi publik secara online. Bisa dengan menyewa hosting berbayar. Atau jika kalian punya akun github, kalian bisa hosting di static web hosting milik github ini. Dan tentunya gratis.</p>
+<p>Nah, di artikel kali ini, akan dibahas bagaimana sih cara publish nya. Disini saya akan bahas cara publish di gh-pages.</p>
+<p>Ada 2 cara:</p>
+<ol>
+<li>Menggunakan <b>Github Actions</b> untuk men deploy blog ke Github Pages. Cara ini bisa bekerja baik di repositori publik ataupun private. Atau,</li>
+<li>Menggunakan <i>One-command Deployment</i>, jika tidak ingin mengunggah file folder Hexo kalian ke github.</li>
+</ol>
+<h2 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h2><ol>
+<li>Buat repositori bernama <b>username<i>.github.io</i></b>, untuk <u>username</u> diisi menggunakan username &#x2F; nama pengguna github kalian.</li>
+<li>Push file folder Hexo kalian ke github repositori yang sudah dibuat tadi. Biasanya github otomatis mem-push file folder Hexo kalian ke cabang&#x2F; branch bawaan <b>main</b>, untuk github lama, mungkin akan di push ke <b>master</b></li>
+</ol>
+<ul>
+<li>Cara push ke cabang&#x2F; branch <code>main</code> github:<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push origin main</span><br></pre></td></tr></table></figure></li>
+<li>Folder <code>public/</code> jangan dan memang tidak diharuskan untuk ter push. Jadi, pastikan di file <code>.gitignore</code> mengandung baris <code>public/</code>. Struktur folder perkiraan akan sama seperti <a href="https://github.com/hexojs/hexo-starter">repositori ini</a>, tanpa file <code>.gitmodules</code>.</li>
+</ul>
+<ol start="3">
+<li>Periksa versi Node.js yang kalian gunakan di komputer kalian dengan <code>node --version</code>. Pastikan yang tercatat adalah versi utama (mis., v16.y.z)</li>
+<li>Buat <code>.github/workflows/pages.yml</code> di repositori kalian dengan mengganti node-version: <code>16</code> dengan versi utama Node.js yang telah kalian cek tadi.</li>
+</ol>
+<figure class="highlight yml"><figcaption><span>.github/workflows/pages.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Pages</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span>  <span class="comment"># default branch</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">pages:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="number">16.</span><span class="string">x</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;16&#x27;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">NPM</span> <span class="string">dependencies</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.OS</span> <span class="string">&#125;&#125;-npm-cache</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.OS &#125;&#125;-npm-cache</span></span><br><span class="line"><span class="string"></span>      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>Ketika proses deployment selesai, maka halaman yang berhasil di <i>generate</i> bisa kalian cek di repositori yang telah dibuat tadi. Dan cek di cabang&#x2F; branch <code>gh-pages</code>.</p>
+</li>
+<li><p>Lalu, di pengaturan github kalian, arahkan menuju <b> Settings</b> &gt; <b> Pages </b> &gt; <b> Source </b>. Dan ganti seperti gambar dibawah ini dan simpan pengaturan</p>
+<img src="/blog/2022/08/30/gh-pages-deployment/002.png" class="" title="source-pages:gh-pages">
+</li>
+<li><p>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io</a>.</p>
+</li>
 </ol>
 <blockquote>
-<p>Informasi</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Judul : Bahagia Bersamamu</li>
-<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
-<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a></li>
-<li><input checked="" disabled="" type="checkbox"> Album : Bahagia Bersamamu</li>
-<li><input checked="" disabled="" type="checkbox"> Lisensi : Believe Music (atas nama Bentuk Music); P.T. Premi Musik Era (Premier), dan 5 Lembaga Manajemen Kolektif</li>
-<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=xUm6uMf-9xI">Official Music Video - Youtube</a></li>
-</ul>
+<p>Catatan: jika kalian menentukan nama domain khusus dengan <code>CNAME</code>, maka kalian perlu menambahkan file <code>CNAME</code> ke folder <code>source/</code>. <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Info lebih lanjut.</a></p>
 </blockquote>
-<h4 id="Lirik-1"><a href="#Lirik-1" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line">Bahagia ku bersamamu</span><br><span class="line">Senang bila dekat denganmu</span><br><span class="line">Kamu mahluk yang aku tuju</span><br><span class="line">Yang lainnya aku tidak mau</span><br><span class="line"> </span><br><span class="line">Genggam erat tangan ku sayang</span><br><span class="line">Dan jangan pernah kau lepaskan</span><br><span class="line">Karena aku butuh bimbingan</span><br><span class="line">Cinta ku jangan kau lewatkan</span><br><span class="line"> </span><br><span class="line">Bahagia aku bila bersamamu</span><br><span class="line">Tenang hatiku dalam pelukanmu</span><br><span class="line">Tetap denganku hingga kau menua</span><br><span class="line">Hingga memutih rambutmu</span><br><span class="line"> </span><br><span class="line">Senang hatiku hidup bersamamu</span><br><span class="line">Belahan jiwa jagalah diriku</span><br><span class="line">karena denganmu damai lah hatiku</span><br><span class="line">menualah bersamaku</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="Halaman-Proyek"><a href="#Halaman-Proyek" class="headerlink" title="Halaman Proyek"></a>Halaman Proyek</h2><p>Jika kalian lebih suka memiliki halaman proyek di GitHub:</p>
+<ol>
+<li>Buat repositori bernama <i>username.github.io&#x2F;</i><b>nama-repo</b>, untuk <u>nama-repo</u> bebas diberi nama misalkan <b>blog &#x2F; hexo </b>.</li>
+<li>Ubah file <code>_config.yml</code>, dan ganti nilai <code>url:</code> menjadi <b><a href="https://username.github.io/nama-repo">https://username.github.io/nama-repo</a>.</b></li>
+<li>Jika sudah, langsung push ke gihtub.</li>
+<li>Ketika proses deployment selesai, maka halaman yang berhasil di <i>generate</i> bisa kalian cek di repositori yang telah dibuat tadi. Dan cek di cabang&#x2F; branch</li>
+<li>Lalu, di pengaturan github kalian, arahkan menuju <b> Settings</b> &gt; <b> Pages </b> &gt; <b> Source </b>. Dan ganti seperti gambar dibawah ini dan simpan pengaturan<img src="/blog/2022/08/30/gh-pages-deployment/002.png" class="" title="source-pages:gh-pages"></li>
+<li>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io&#x2F;<i>nama-repositori</i></a>.</li>
+</ol>
+<h2 id="One-command-Deployment"><a href="#One-command-Deployment" class="headerlink" title="One-command Deployment"></a>One-command Deployment</h2><p>Semua instruksi disini berasal dari adaptasi halaman <a href="https://hexo.io/docs/one-command-deployment">one-deployment-command</a></p>
+<ol>
+<li>Install <a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
+<li>Tambahkan konfigurasi berikut ke <code>_config.yml</code>, (hapus baris yang ada jika ada).<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;project&gt;</span></span><br><span class="line">  <span class="comment"># example, https://github.com/hexojs/hexojs.github.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure></li>
+<li>Jalankan perintah berikut<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
+<li>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io</a>.</li>
+</ol>
+<p>Terima kasih sudah membaca artikel <a href="#github-pages">Deploy blog to gh-pages</a></p>
+<p>Referensi:<br><a href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a><br><a href="https://docs.github.com/en/pages">https://docs.github.com/en/pages</a><br><a href="https://github.com/marketplace/actions/github-pages-action">https://github.com/marketplace/actions/github-pages-action</a></p>
+]]></content>
       <categories>
-        <category>General</category>
+        <category>Technology</category>
       </categories>
       <tags>
-        <tag>Copyright</tag>
-        <tag>Permission</tag>
+        <tag>Hexo</tag>
+        <tag>Guide</tag>
       </tags>
   </entry>
   <entry>
@@ -295,6 +316,51 @@
         <tag>Hexo</tag>
         <tag>Guide</tag>
         <tag>Installation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Songs played on this web.</title>
+    <url>/blog/2022/08/09/songs-played-on-this-web/</url>
+    <content><![CDATA[<h2 id="Permission"><a href="#Permission" class="headerlink" title="Permission"></a>Permission</h2><p>Semoga dapat izin…</p>
+<p>Halloo, untuk kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>, maaf ya aku pinjam lagunya untuk dimainkan di blog ini sebagai backsong.</p>
+<p>Tapi disini aku cantumin semua info tentang kak <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a> dan kak <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a>.</p>
+<h2 id="Songs-Played-on-This-Web"><a href="#Songs-Played-on-This-Web" class="headerlink" title="Songs Played on This Web"></a>Songs Played on This Web</h2><ol>
+<li>Citra Scholastika - Everybody Knew 1st Single Citra Scholastika</li>
+</ol>
+<blockquote>
+<p>Informasi</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Judul : Everybody Knew</li>
+<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
+<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Citra_Scholastika">Citra Scholastika</a></li>
+<li><input checked="" disabled="" type="checkbox"> Album : Pasti Bisa</li>
+<li><input checked="" disabled="" type="checkbox"> Lisensi : (atas nama Hits Records); UMPG Publishing, ASCAP, PT Massive Music Entertainment, Polaris Hub AB, LatinAutorPerf, dan 10 Lembaga Manajemen Kolektif</li>
+<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=GFLb0Gw9MDs">Official Music Video - Youtube</a></li>
+</ul>
+</blockquote>
+<h4 id="Lirik"><a href="#Lirik" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada penyesalan dalam hidupku</span><br><span class="line">Dan apa yang kurasakan saat ini</span><br><span class="line">Seperti dahulu ku tak mengenalmu</span><br><span class="line">Ketika kulihat kau bersama dia</span><br><span class="line">Tak ada lagi hasrat dalam hidupku</span><br><span class="line">Kepada dirimu yang dulu tercinta</span><br><span class="line">Tak ada lagi kenangan, takkan lagi harapan</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Ketika kulihat kau bersama dia</span></span><br><span class="line"><span class="string">Tak ada penyesalan dalam hidupku</span></span><br><span class="line"><span class="string">Dan apa yang kurasakan saat ini</span></span><br><span class="line"><span class="string">Seperti dahulu ku tak mengenalmu</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar Everybody knew you<span class="string">&#x27;re a liar</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Baby</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a liar (Everybody knew you<span class="string">&#x27;re a liar)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re a player (Everybody knew you<span class="string">&#x27;re a player)</span></span><br><span class="line"><span class="string">Everybody knew you&#x27;</span>re never</span><br><span class="line">Serious risk your love again</span><br><span class="line">And I tell you once again</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a liar (Everybody knew you&#x27;</span>re a liar)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re a player (Everybody knew you&#x27;</span>re a player)</span><br><span class="line">Everybody knew you<span class="string">&#x27;re never</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Serious risk your love again</span></span><br><span class="line"><span class="string">And I tell you once again</span></span><br><span class="line"><span class="string">Oh baby</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Haico - Bahagia Bersamamu | OFFICIAL MUSIC VIDEO</li>
+</ol>
+<blockquote>
+<p>Informasi</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Judul : Bahagia Bersamamu</li>
+<li><input checked="" disabled="" type="checkbox"> Jenis : Lagu &#x2F; Musik&#x2F; Video&#x2F; Official</li>
+<li><input checked="" disabled="" type="checkbox"> Artis : <a href="https://id.wikipedia.org/wiki/Haico_Van_der_Veken">Haico</a></li>
+<li><input checked="" disabled="" type="checkbox"> Album : Bahagia Bersamamu</li>
+<li><input checked="" disabled="" type="checkbox"> Lisensi : Believe Music (atas nama Bentuk Music); P.T. Premi Musik Era (Premier), dan 5 Lembaga Manajemen Kolektif</li>
+<li><input checked="" disabled="" type="checkbox"> Url : <a href="https://www.youtube.com/watch?v=xUm6uMf-9xI">Official Music Video - Youtube</a></li>
+</ul>
+</blockquote>
+<h4 id="Lirik-1"><a href="#Lirik-1" class="headerlink" title="Lirik"></a>Lirik</h4><figure class="highlight bash"><figcaption><span>lirik-lagu</span></figcaption><table><tr><td class="code"><pre><span class="line">Bahagia ku bersamamu</span><br><span class="line">Senang bila dekat denganmu</span><br><span class="line">Kamu mahluk yang aku tuju</span><br><span class="line">Yang lainnya aku tidak mau</span><br><span class="line"> </span><br><span class="line">Genggam erat tangan ku sayang</span><br><span class="line">Dan jangan pernah kau lepaskan</span><br><span class="line">Karena aku butuh bimbingan</span><br><span class="line">Cinta ku jangan kau lewatkan</span><br><span class="line"> </span><br><span class="line">Bahagia aku bila bersamamu</span><br><span class="line">Tenang hatiku dalam pelukanmu</span><br><span class="line">Tetap denganku hingga kau menua</span><br><span class="line">Hingga memutih rambutmu</span><br><span class="line"> </span><br><span class="line">Senang hatiku hidup bersamamu</span><br><span class="line">Belahan jiwa jagalah diriku</span><br><span class="line">karena denganmu damai lah hatiku</span><br><span class="line">menualah bersamaku</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>General</category>
+      </categories>
+      <tags>
+        <tag>Copyright</tag>
+        <tag>Permission</tag>
       </tags>
   </entry>
   <entry>

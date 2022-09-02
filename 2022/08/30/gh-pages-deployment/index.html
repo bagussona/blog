@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Deploy blog to gh-pages - bagussona-blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Setelah mengikuti semua seri tentang hexo di blog ini. Mungkin kalian sekarang ingin membuat blog,"> 
+    <meta name="author" content="bagussona"> 
+    <link rel="alternative" href="atom.xml" title="bagussona-blog" type="application/atom+xml"> 
+    <link rel="icon" href="/blog/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Deploy blog to gh-pages - bagussona-blog"/>
+    <meta name="twitter:description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Setelah mengikuti semua seri tentang hexo di blog ini. Mungkin kalian sekarang ingin membuat blog,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="bagussona-blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Deploy blog to gh-pages - bagussona-blog"/>
+    <meta property="og:description" content="daily, diary, interest, tech, project, and work journal of bagussona,
+
+Setelah mengikuti semua seri tentang hexo di blog ini. Mungkin kalian sekarang ingin membuat blog,"/>
+    
+<link rel="stylesheet" href="/blog/css/diaspora.css">
+
+    <script>window.searchDbPath = "/blog/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">bagussona-blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://bagussona.github.io/blog"></a>
+    <div title="Play/ Pause" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Deploy blog to gh-pages</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="Get QR Code" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Deploy blog to gh-pages</h1>
+        <div class="stuff">
+            <span>August 30, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/Guide/" rel="tag">Guide</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <img src="/blog/2022/08/30/gh-pages-deployment/001.png" class="" title="Hexo">
+
+<p>Setelah mengikuti semua seri tentang hexo di blog ini. Mungkin kalian sekarang ingin membuat blog hexo kalian di publish online? Tidak hanya sekadar konfigurasi di lokal komputer kita saja? Agar semua orang dapat membaca tulisan &#x2F; artikel kita. Iya kan?</p>
+<p>Ada banyak cara untuk membuat blog hexo kita dapat dikonsumsi publik secara online. Bisa dengan menyewa hosting berbayar. Atau jika kalian punya akun github, kalian bisa hosting di static web hosting milik github ini. Dan tentunya gratis.</p>
+<p>Nah, di artikel kali ini, akan dibahas bagaimana sih cara publish nya. Disini saya akan bahas cara publish di gh-pages.</p>
+<p>Ada 2 cara:</p>
+<ol>
+<li>Menggunakan <b>Github Actions</b> untuk men deploy blog ke Github Pages. Cara ini bisa bekerja baik di repositori publik ataupun private. Atau,</li>
+<li>Menggunakan <i>One-command Deployment</i>, jika tidak ingin mengunggah file folder Hexo kalian ke github.</li>
+</ol>
+<h2 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h2><ol>
+<li>Buat repositori bernama <b>username<i>.github.io</i></b>, untuk <u>username</u> diisi menggunakan username &#x2F; nama pengguna github kalian.</li>
+<li>Push file folder Hexo kalian ke github repositori yang sudah dibuat tadi. Biasanya github otomatis mem-push file folder Hexo kalian ke cabang&#x2F; branch bawaan <b>main</b>, untuk github lama, mungkin akan di push ke <b>master</b></li>
+</ol>
+<ul>
+<li>Cara push ke cabang&#x2F; branch <code>main</code> github:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin main</span><br></pre></td></tr></table></figure></li>
+<li>Folder <code>public/</code> jangan dan memang tidak diharuskan untuk ter push. Jadi, pastikan di file <code>.gitignore</code> mengandung baris <code>public/</code>. Struktur folder perkiraan akan sama seperti <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter">repositori ini</a>, tanpa file <code>.gitmodules</code>.</li>
+</ul>
+<ol start="3">
+<li>Periksa versi Node.js yang kalian gunakan di komputer kalian dengan <code>node --version</code>. Pastikan yang tercatat adalah versi utama (mis., v16.y.z)</li>
+<li>Buat <code>.github/workflows/pages.yml</code> di repositori kalian dengan mengganti node-version: <code>16</code> dengan versi utama Node.js yang telah kalian cek tadi.</li>
+</ol>
+<figure class="highlight yml"><figcaption><span>.github/workflows/pages.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Pages</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span>  <span class="comment"># default branch</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">pages:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="number">16.</span><span class="string">x</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;16&#x27;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">NPM</span> <span class="string">dependencies</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.OS</span> <span class="string">&#125;&#125;-npm-cache</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.OS &#125;&#125;-npm-cache</span></span><br><span class="line"><span class="string"></span>      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>Ketika proses deployment selesai, maka halaman yang berhasil di <i>generate</i> bisa kalian cek di repositori yang telah dibuat tadi. Dan cek di cabang&#x2F; branch <code>gh-pages</code>.</p>
+</li>
+<li><p>Lalu, di pengaturan github kalian, arahkan menuju <b> Settings</b> &gt; <b> Pages </b> &gt; <b> Source </b>. Dan ganti seperti gambar dibawah ini dan simpan pengaturan</p>
+<img src="/blog/2022/08/30/gh-pages-deployment/002.png" class="" title="source-pages:gh-pages">
+</li>
+<li><p>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io</a>.</p>
+</li>
+</ol>
+<blockquote>
+<p>Catatan: jika kalian menentukan nama domain khusus dengan <code>CNAME</code>, maka kalian perlu menambahkan file <code>CNAME</code> ke folder <code>source/</code>. <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Info lebih lanjut.</a></p>
+</blockquote>
+<h2 id="Halaman-Proyek"><a href="#Halaman-Proyek" class="headerlink" title="Halaman Proyek"></a>Halaman Proyek</h2><p>Jika kalian lebih suka memiliki halaman proyek di GitHub:</p>
+<ol>
+<li>Buat repositori bernama <i>username.github.io&#x2F;</i><b>nama-repo</b>, untuk <u>nama-repo</u> bebas diberi nama misalkan <b>blog &#x2F; hexo </b>.</li>
+<li>Ubah file <code>_config.yml</code>, dan ganti nilai <code>url:</code> menjadi <b><a target="_blank" rel="noopener" href="https://username.github.io/nama-repo">https://username.github.io/nama-repo</a>.</b></li>
+<li>Jika sudah, langsung push ke gihtub.</li>
+<li>Ketika proses deployment selesai, maka halaman yang berhasil di <i>generate</i> bisa kalian cek di repositori yang telah dibuat tadi. Dan cek di cabang&#x2F; branch</li>
+<li>Lalu, di pengaturan github kalian, arahkan menuju <b> Settings</b> &gt; <b> Pages </b> &gt; <b> Source </b>. Dan ganti seperti gambar dibawah ini dan simpan pengaturan<img src="/blog/2022/08/30/gh-pages-deployment/002.png" class="" title="source-pages:gh-pages"></li>
+<li>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io&#x2F;<i>nama-repositori</i></a>.</li>
+</ol>
+<h2 id="One-command-Deployment"><a href="#One-command-Deployment" class="headerlink" title="One-command Deployment"></a>One-command Deployment</h2><p>Semua instruksi disini berasal dari adaptasi halaman <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment">one-deployment-command</a></p>
+<ol>
+<li>Install <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
+<li>Tambahkan konfigurasi berikut ke <code>_config.yml</code>, (hapus baris yang ada jika ada).<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;project&gt;</span></span><br><span class="line">  <span class="comment"># example, https://github.com/hexojs/hexojs.github.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure></li>
+<li>Jalankan perintah berikut<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
+<li>Jika tidak ada kendala, seharusnya halaman blog sudah bisa diakses. Silahkan cek halaman blog kalian di <a href="#">username.github.io</a>.</li>
+</ol>
+<p>Terima kasih sudah membaca artikel <a href="#github-pages">Deploy blog to gh-pages</a></p>
+<p>Referensi:<br><a target="_blank" rel="noopener" href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a><br><a target="_blank" rel="noopener" href="https://docs.github.com/en/pages">https://docs.github.com/en/pages</a><br><a target="_blank" rel="noopener" href="https://github.com/marketplace/actions/github-pages-action">https://github.com/marketplace/actions/github-pages-action</a></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="/blog//music/005-Haico-Bahagia-Bersamamu.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="/blog//music/006-Citra-Scholastika-Everybody-Knew.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="false"
+        data-ci="c7bc3901b06c9256f6a1"
+        data-cs="1955536a83ddc0b54617f479c1a4cf8c1fc7a45d"
+        data-r="blog"
+        data-o="bagussona"
+        data-a="bagussona"
+        data-d="false"
+    >Load Comments</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/blog/js/plugin.js"></script>
+<script src="/blog/js/typed.js"></script>
+<script src="/blog/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/blog/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/blog/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/blog/photoswipe/photoswipe.min.js"></script>
+<script src="/blog/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
